@@ -40,7 +40,7 @@ header p{
 }
 
 .wrapper .form{
-    margin: 1px 0;
+    margin: 15px 0 15px;
 }
 
 .form :where(input, button){
@@ -91,5 +91,5 @@ header p{
     opacity: 1;
     pointer-events: auto;
     transition: opacity 0.5s 0.05s ease;
-    color: tomato;
+    color: #ff6347;
 }

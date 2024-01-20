@@ -21,10 +21,11 @@ body{
     border-radius: 7px;
     padding: 16px 25px;
     transition: height 0.2s ease;
+    overflow: hidden;
 }
 
 .wrapper.active{
-    height: 530px;
+    height: 480px;
 }
 
 header h1{
@@ -39,7 +40,7 @@ header p{
 }
 
 .wrapper .form{
-    margin: 20px 0 25px;
+    margin: 1px 0;
 }
 
 .form :where(input, button){
@@ -52,7 +53,7 @@ header p{
 
 .form input{
     font-size: 18px;
-    padding: 0 17px;
+    padding: 0 15px;
     border: 1px solid #999;
 }
 
@@ -80,4 +81,15 @@ header p{
     opacity: 1;
     pointer-events: auto;
     transition: opacity 0.5s 0.05s ease;
+}
+
+.wrapper .error-msg{
+    opacity: 0;
+}
+
+.wrapper.error .error-msg{
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.5s 0.05s ease;
+    color: tomato;
 }
